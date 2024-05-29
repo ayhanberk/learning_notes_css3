@@ -1,0 +1,435 @@
+/* tag ile kullanımı */
+/* p{
+    background-color: black;
+} */
+
+/* id ile kullanımı */
+/* #parag_id{
+    background-color: blue;
+} */
+
+/* class ile kullanımı */
+/* .parag_class{
+    background-color: orange;
+} */
+
+/* color, background-color, important */
+#parag_id {
+    color: red;
+    color: #ff0000;
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.9);
+    color: hsl(0, 100%, 50%);
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 0.9);
+    background-color: black !important;
+    background-color: blue;
+
+    /* padding:10px 15px 25px 12px; */
+    /* padding:10px 20px 15px; */
+    /* padding:15px 20px; */
+    /* padding:15px; */
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    /* margin:10px 15px 25px 12px; */
+    /* margin:10px 20px 15px; */
+    /* margin:15px 20px; */
+    /* margin:15px; */
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+/* border border-radius */
+#div_id {
+    background-color: black;
+    color: yellow;
+    padding: 25px;
+    margin-bottom: 10px;
+    /* border-width: 20px;
+    border-style: solid;
+    border-color: blue; */
+    border: 20px solid blue;
+    /* border-radius: 20px;
+    border-radius: 2px 15px 50px 3px; */
+    /* border-radius:40px 5px; */
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 52.5px;
+}
+
+/* text */
+#parag_id4 {
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    color: lightblue;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 12px;
+    text-shadow: 2px 30px 4px yellow;
+}
+
+/* column -count */
+.column-container {
+    column-count: 3;
+    column-rule: 1px solid red;
+    text-transform: capitalize;
+    text-align: justify;
+    column-gap: 20px;
+}
+
+/*line -clamp */
+.line-clamp4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* other for browser */
+    display: -moz-box;
+    -moz-line-clamp: 4;
+    -moz-box-orient: vertical;
+}
+
+/* link*/
+#css_a {
+    color: blue;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#css_a:hover {
+    color: black;
+    background-color: blue;
+    padding: 9px;
+    text-decoration: none;
+}
+
+.css_width_height {
+    background-color: blue;
+    color: white;
+    margin-top: 5px;
+    width: 200px;
+    width: 70%;
+    height: 50px;
+}
+
+.css_width_height:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    cursor: move;
+    cursor: text;
+}
+
+/* transition - transform box-shadow */
+.css_transition_transform {
+    background-color: blue;
+    color: black;
+    width: 75%;
+    height: 100px;
+    padding: 10px;
+    transition: width 3s ease-in-out 3s, background-color 0.5s linear;
+    transition: 3s all;
+    box-shadow: -1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.css_transition_transform:hover {
+    background-color: black;
+    color: blue;
+    width: 100%;
+    transform: rotate(45deg);
+    transform: scale(1.5);
+    transform: translate(50px, 20px);
+    transform: skew(30deg, 20deg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*display_ display box_sizing*/
+.css_display {
+    /* 
+    display:none; 
+    visibility: hidden;  
+    visibility: visible;
+    */
+    display: block;
+    display: inline;
+    display: inline-block;
+    border: 5px solid yellow;
+    width: 150px;
+    padding: 20px;
+    /* w =200 p= 20*2 border=5*2  250px*/
+}
+
+
+/* List*/
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 19px;
+    text-decoration: none;
+}
+
+/* table */
+.custom-table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+.custom-table td,
+.custom-table th {
+    border: 1px solid #dd1;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*rem=html em=body calc: hesaplama*/
+/* html{
+    font-size:16px;
+} */
+
+body {
+    font-size: 20px;
+}
+
+#parag6 {
+    font-size: calc(1em + 20px);
+}
+
+/* image */
+#image_id {
+    width: 100%;
+    height: 450px;
+    background-image: url('./image/1.png');
+    background-size: cover;
+    /* object-fit: cover; */
+
+}
+
+/*header*/
+header {
+    background-image: url('./image/2.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 22px;
+    height: 75vh;
+    /*view port: tarayıcının bize sağladığı, kullanıcı görübildiği alan demektir.*/
+    text-align: center;
+
+}
+
+#linear_gradient_id {
+    background: linear-gradient(to right, #1500ff, #ec3a03);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 22px;
+    height: 75vh;
+}
+
+/*float_examples*/
+.float_examples {
+    float: right;
+    margin-left: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*clip_path_id*/
+#clip_path_id {
+    background-color: yellow;
+    min-height: 300px;
+    max-width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+}
+
+/* selector */
+/* p{
+    font-size: 1.5rem!important;
+}
+
+.parag1{
+    font-size: 1.5rem!important;
+}
+
+div {
+    background-color: red;;
+}
+
+div p {
+    background-color: blue;
+}
+
+
+div + p {
+    background-color: yellow;
+}
+
+
+div ~ p {
+    background-color: lightblue
+}
+
+li:nth-child(odd){
+    background-color: red;
+}
+
+li:nth-child(even){
+    background-color: blue;
+}
+
+li:nth-of-type(6){
+    background-color: yellow;
+}
+
+a{
+    background-color: red;
+}
+
+a:hover{
+    background-color: yellow;
+}
+
+a:active{
+    background-color: blue;
+} */
+
+
+
+/* responsive_design */
+.css_responsive_design {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* 468 <=Responsive <=768 */
+@media (min-width:100px) and (max-width:768px) {
+    .css_responsive_design {
+        background-color: blue;
+        color: white;
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* 769 <=Responsive <=991 */
+@media (min-width:769px) and (max-width:991px) {
+    .css_responsive_design {
+        background-color: yellow;
+        color: black;
+        width: 49%;
+        display: inline-block;
+    }
+}
+
+/* 992 <=Responsive <=1199 */
+@media (min-width:992px) and (max-width:1199px) {
+    .css_responsive_design {
+        background-color: orange;
+        color: white;
+        width: 32%;
+        display: inline-block;
+    }
+}
+
+/* 769 <=Responsive <=991 */
+@media (min-width:1200px) {
+    .css_responsive_design {
+        background-color: red;
+        color: white;
+        width: 24%;
+        display: inline-block;
+    }
+}
+
+/*flexbox*/
+.css_flexbox1 {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid blue
+}
+
+.css_flexbox2 {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.css_flexbox3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css_flexbox3 .child {
+    margin: 12px;
+    padding: 12px;
+    border: 1px solid #cc2;
+}
